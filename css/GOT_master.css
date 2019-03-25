@@ -33,10 +33,14 @@ main {
 	height:360px;
 	background-color:grey;
 	margin:0 auto;
-	/*overflow:hidden;*/
+	overflow:hidden;
 }
 
-#houseImages { position:relative; width:4000px; transition: all .5s; }
+#houseImages { 
+	position:relative; 
+	width:4000px; 
+	/*transition: all .5s;*/ 
+}
 #houseImages img { float:left; }
 
 #bottomNav { margin-top:30px; }
@@ -97,22 +101,26 @@ main {
 }
 
 /* add styles here for lightbox and video */
-.lightbox
-{
+.lightbox {
 	position: absolute;
-	text-align: center;
-	width: 100%;
 	top: 0;
-	background-color: rgba(0, 0, 0, 0.9);
 	height: 100%;
+	width: 100%;
+	text-align: center;
+	background: rgba(0,0,0,0.9);
 	display: none;
 }
 
-.lightbox-on
-{
-	display: block;
-}
+.lightbox-on { display: block; }
 
+.lightbox-close {
+	position: absolute;
+	color: white;
+	font-size: 2rem;
+	right: 12px;
+	top: 12px;
+	cursor: pointer;
+}
 
 video {
 	width: 80%;
